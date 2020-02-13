@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController">
+            <connections>
+                <outlet property="mainTab" destination="gQA-SI-R28" id="cCB-Ju-YwI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZa-yy-pG4">
+                    <rect key="frame" x="30" y="64" width="32" height="32"/>
+                    <state key="normal" image="VIP.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFY-wP-i5b">
+                    <rect key="frame" x="171.5" y="64" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Hnt-3k-JK1"/>
+                        <constraint firstAttribute="width" constant="32" id="a4O-fI-1fu"/>
+                    </constraints>
+                    <state key="normal" image="theme.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-75-p34">
+                    <rect key="frame" x="313" y="64" width="32" height="32"/>
+                    <state key="normal" image="message.png"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-SI-R28">
+                    <rect key="frame" x="0.0" y="96" width="375" height="511"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TFA-Tf-HMl"/>
+                        <outlet property="delegate" destination="-1" id="col-2i-4jh"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xs-Ds-DSS">
+                    <rect key="frame" x="25" y="607" width="70" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Qyy-fl-eW7"/>
+                    </constraints>
+                    <state key="normal" title="设置" image="setting.png">
+                        <color key="titleColor" red="0.15056313569999999" green="0.15055863559999999" blue="0.15056121350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdI-ya-UDH">
+                    <rect key="frame" x="240" y="607" width="110" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="ydv-VH-o3E"/>
+                    </constraints>
+                    <state key="normal" title="立即登录" image="login.png">
+                        <color key="titleColor" red="0.15056313569999999" green="0.15055863559999999" blue="0.15056121350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3xs-Ds-DSS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="4kq-S7-vfg"/>
+                <constraint firstItem="fZa-yy-pG4" firstAttribute="height" secondItem="GFY-wP-i5b" secondAttribute="height" id="AWx-mf-4aG"/>
+                <constraint firstItem="fZa-yy-pG4" firstAttribute="width" secondItem="GFY-wP-i5b" secondAttribute="width" id="BOO-1K-xw2"/>
+                <constraint firstItem="fZa-yy-pG4" firstAttribute="top" secondItem="GFY-wP-i5b" secondAttribute="top" id="BU8-fQ-Qht"/>
+                <constraint firstItem="L6b-75-p34" firstAttribute="height" secondItem="GFY-wP-i5b" secondAttribute="height" id="F8o-Ck-OgC"/>
+                <constraint firstAttribute="bottom" secondItem="cdI-ya-UDH" secondAttribute="bottom" id="Jjv-Ey-gCu"/>
+                <constraint firstAttribute="bottom" secondItem="3xs-Ds-DSS" secondAttribute="bottom" id="Jlj-uy-0o7"/>
+                <constraint firstItem="fZa-yy-pG4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="MsA-bk-K2B"/>
+                <constraint firstItem="3xs-Ds-DSS" firstAttribute="top" secondItem="gQA-SI-R28" secondAttribute="bottom" id="MvW-Bc-NHE"/>
+                <constraint firstAttribute="trailing" secondItem="gQA-SI-R28" secondAttribute="trailing" id="NdH-Lg-ybP"/>
+                <constraint firstItem="L6b-75-p34" firstAttribute="top" secondItem="GFY-wP-i5b" secondAttribute="top" id="Rlx-7x-WwI"/>
+                <constraint firstItem="L6b-75-p34" firstAttribute="width" secondItem="GFY-wP-i5b" secondAttribute="width" id="WE0-Pm-Dim"/>
+                <constraint firstItem="GFY-wP-i5b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WsT-bD-oky"/>
+                <constraint firstAttribute="bottom" secondItem="gQA-SI-R28" secondAttribute="bottom" constant="60" id="a3L-zD-7AF"/>
+                <constraint firstItem="GFY-wP-i5b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="c5m-cr-0lT"/>
+                <constraint firstItem="gQA-SI-R28" firstAttribute="top" secondItem="fZa-yy-pG4" secondAttribute="bottom" id="cWv-Oq-m3X"/>
+                <constraint firstAttribute="trailing" secondItem="L6b-75-p34" secondAttribute="trailing" constant="30" id="dls-S0-Xq2"/>
+                <constraint firstAttribute="trailing" secondItem="cdI-ya-UDH" secondAttribute="trailing" constant="25" id="efM-pI-dfy"/>
+                <constraint firstItem="gQA-SI-R28" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qK5-jq-tLR"/>
+                <constraint firstItem="cdI-ya-UDH" firstAttribute="top" secondItem="gQA-SI-R28" secondAttribute="bottom" id="x4x-Xc-WYd"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="VIP.png" width="32" height="32"/>
+        <image name="login.png" width="32" height="32"/>
+        <image name="message.png" width="32" height="32"/>
+        <image name="setting.png" width="32" height="32"/>
+        <image name="theme.png" width="32" height="32"/>
+    </resources>
+</document>
